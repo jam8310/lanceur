@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Dés</title>
+
+  </head>
+  <body>
+    <h1><center>Les Dés</center></h1>
+
+
+    <div class="formName" onSubmit="return(false);">
+      <form>
+        Name: <input type="text" name="name" id="name" value="">
+      </form>
+    </div>
+
+    <div class="dés">
+      <button type="button" id="4" class="btn"><img class="img" src="img/d4.png" width="42px" height="42px"/><span>4</span></button>
+      <button type="button" id="6" class="btn"><img class="img" src="img/d6.png" width="42px" height="42px"/><span>6</span></button>
+      <button type="button" id="8" class="btn"><img class="img" src="img/d8.png" width="42px" height="42px"/><span>8</span></button>
+      <button type="button" id="10" class="btn"><img class="img" src="img/d10.png" width="42px" height="42px"/><span>10</span></button>
+      <button type="button" id="12" class="btn"><img class="img" src="img/d12.png" width="42px" height="42px"/><span>12</span></button>
+      <button type="button" id="20" class="btn"><img class="img" src="img/d20.png" width="42px" height="42px"/><span>20</span></button>
+    </div>
+
+    <div class="plateau">
+      <ul class="resultat"></ul>
+    </div>
+
+    <button type="button" class="btn_roll">Roll it</button>
+    <button type="button" class="btn_clear">Clear All</button>
+
+    <div class="res"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://lanceur.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

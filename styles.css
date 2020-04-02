@@ -1,0 +1,89 @@
+body{
+  width:600px;
+  margin:auto;
+  text-align:center;
+}
+.formName{
+  margin:10px 0;
+}
+  .plateau{
+    width:100%;
+    height:100px;
+    border:1px solid #444;
+    border-radius:3px;
+    margin: 10px 0;
+
+  }
+  .res{
+    display:flex;
+    border:1px solid #444;
+    border-radius:3px;
+    margin: 10px 0;
+    width:100%;
+    min-height:50px;
+  }
+  .resultat{
+    display:flex;
+    align-items: center;
+    width:100%;
+    height:100%;
+    margin: auto 10px;
+
+  }
+  .dés button, .resultat button{
+    background-color: #fff;
+  }
+  li{
+    list-style: none;
+    margin:5px;
+    background-color:transparent;
+  }
+  ul{
+    padding:0;
+    margin:5px;
+  }
+  .btn_roll{
+    width:100px;
+  }
+  .dés button, .resultat button{
+    position:relative;
+    border:none;
+    outline:none;
+  }
+  .img{
+    position:relative;
+  }
+  span{
+    width:10px;
+    width:10px;
+    position:absolute;
+    top:calc(50% - 7px);
+    left:calc(50% - 5px);
+    color:#fff;
+  }
+  .rotationIn{
+    transform: rotate3d(10, 10, 10, 360deg);
+    transition: transform 2s;
+  }
+  .rotationOff{
+    transform: rotate3d(10, 10, 10, -360deg);
+    transition: transform 2s;
+  }
+  .res{
+    border:none;
+    border-top:1px solid #333;
+    display:flex;
+    flex-direction: column;
+  }
+  .resLancerPlateau{
+    display:block;
+    border-bottom:1px solid #333;
+    width:100%;
+  }
+  .resPlateau{
+    display: flex;
+    align-items: center;
+  }
+  .resPlateau li:last-child{
+    text-align:left;
+  }

@@ -185,7 +185,7 @@ function chargement(){
 
 
   //lire un fichier JSON
-    $.getJSON('variables.json', function(data){
+    $.getJSON('https://lanceur.herokuapp.com/variables.json', function(data){
 
       //objet json dans la variable element
       let element = data;
